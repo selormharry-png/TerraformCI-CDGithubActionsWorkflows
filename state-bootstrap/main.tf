@@ -3,9 +3,16 @@ locals {
 
 }
 
+resource "random_string" "suffix" {
+  length  = 6
+  special = false
+  upper   = false
+}
+
+
 resource "aws_s3_bucket" "tfstate" {
   for_each = toset(local.envs)
-  bucket   = "myapp-tfstate-${each.key}-101"
+  bucket   = "harry-cicd-s3-bucket${each.key}-101"
 
   lifecycle {
     prevent_destroy = true

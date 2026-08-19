@@ -1,6 +1,12 @@
+module "s3-backend" {
+  source  = "selormharry-png/s3-backend/aws"
+  version = "1.0.2"
+  bucket_name = "harry-cicd-s3-bucketdev-module-101"
+}
 
-module "devops-ec2" {
-  source  = "kodcapsule/devops-ec2/aws"
+
+module "ec2module" {
+  source  = "selormharry-png/ec2module/aws"
   version = "1.0.0"
 }
 
