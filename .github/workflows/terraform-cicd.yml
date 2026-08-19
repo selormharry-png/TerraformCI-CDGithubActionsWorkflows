@@ -59,7 +59,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v5.1.0
         with:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
-          role-session-name: GGithubActionsWorkflowRole
+          role-session-name: GithubActionsWorkflowRole
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Terraform Init
