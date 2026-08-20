@@ -1,10 +1,10 @@
-output "instance_public_ip" {
-  value = module.module-2-webserver_instance_ip
-}
+# output "instance_public_ip" {
+#   value = module.module-2-webserver_instance_ip
+# }
 
-output "instance_id" {
-  value = module.module-2-webserver.instance_id
-}
+# output "instance_id" {
+#   value = module.module-2-webserver.instance_id
+# }
 
 output "bucket_name" {
   value = module.s3-backend.bucket_name
