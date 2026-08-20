@@ -21,7 +21,7 @@ module "ec2module" {
 
 
 # "token.actions.githubusercontent.com:sub": [
-# 						"repo:kodecapsul/*",c
+# 						"repo:kodecapsul/*",
 # 						"repo:kodecapsul/*"
 # 					]
 
