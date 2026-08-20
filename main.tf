@@ -5,7 +5,7 @@ module "s3-backend" {
 }
 
 
-module "ec2module" {
+module "module-2-webserver" {
   source  = "selormharry-png/ec2module/aws"
   version = "1.0.0"
 }

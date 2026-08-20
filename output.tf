@@ -1,5 +1,5 @@
 output "instance_public_ip" {
-  value = module.ec2module_instance_ip
+  value = module.module-2-webserver_instance_ip
 }
 
 output "instance_id" {
