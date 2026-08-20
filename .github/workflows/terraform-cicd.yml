@@ -17,7 +17,7 @@ on:
     - 'README.md'
     - '.md'   
   workflow_run: # Triggered when manually triggered from the Actions tab
-    workflows: ["gitleaks"] # Name of the workflow that
+    workflows: ["gitleaks"] # Name of the workflow that triggers this workflow
     types:
       - completed  
 
@@ -69,7 +69,7 @@ jobs:
           role-session-name: GithubActionsWorkflowRole
           aws-region: ${{ env.AWS_REGION }}
           
-          
+
 
       - name: Terraform Init
         id: init
