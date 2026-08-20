@@ -3,7 +3,7 @@ output "instance_public_ip" {
 }
 
 output "instance_id" {
-  value = module.ec2module.instance_id
+  value = module.module-2-webserver.instance_id
 }
 
 output "bucket_name" {
