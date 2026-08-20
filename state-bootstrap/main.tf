@@ -12,7 +12,7 @@ resource "random_string" "suffix" {
 
 resource "aws_s3_bucket" "tfstate" {
   for_each = toset(local.envs)
-  bucket   = "selorm-s3-remote-backend-bucket${each.key}-101"
+  bucket   = "harry-cicd-s3-bucket${each.key}-101"
 
   lifecycle {
     prevent_destroy = true

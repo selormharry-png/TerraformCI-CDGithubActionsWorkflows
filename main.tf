@@ -1,7 +1,7 @@
 module "s3-backend" {
   source  = "selormharry-png/s3-backend/aws"
   version = "1.0.2"
-  bucket_name = "selorm-s3-remote-backend-bucket-dev-module-101"
+  bucket_name = "harry-cicd-s3-bucketdev-module-101"
 }
 
 
