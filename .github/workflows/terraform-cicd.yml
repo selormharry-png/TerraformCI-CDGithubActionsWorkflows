@@ -17,7 +17,7 @@ on:
     - 'README.md'
     - '.md'   
   workflow_run: # Triggered when manually triggered from the Actions tab
-    workflows: ["gitleaks"] # Name of the workflow that triggers this workflow
+    workflows: ["gitleaks"] # Name of the workflow that triggers this workflows
     types:
       - completed  
 
